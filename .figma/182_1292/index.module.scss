@@ -1,0 +1,260 @@
+* {
+  box-sizing: border-box;
+}
+
+.explorePage {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #121111;
+  padding: 14px 26px 59px 19px;
+  width: 433px;
+  height: 922px;
+  overflow: hidden;
+
+  .autoWrapper {
+    position: absolute;
+    top: -116px;
+    left: -84px;
+    width: 576px;
+    height: 352px;
+
+    .blackGradient {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0.5;
+      width: 576px;
+      height: 352px;
+      rotate: -180deg;
+      background-image: linear-gradient(
+        180deg,
+        #0e0e0e00 0%,
+        #102b2dd6 36.26%,
+        #06a0b5d6 99.76%
+      );
+    }
+
+    .rectangle32 {
+      display: flex;
+      position: absolute;
+      top: 238px;
+      left: 112px;
+      align-items: flex-start;
+      justify-content: space-between;
+      border-radius: 18px;
+      background: #d9d9d9;
+      padding: 10px 104px 10px 18px;
+      width: 364px;
+      height: 44px;
+
+      .interfaceBrowse {
+        width: 24px;
+        height: 24px;
+        overflow: hidden;
+      }
+
+      .songsArtistsPodcasts {
+        margin: 3px 0px 0px;
+        line-height: 16px;
+        letter-spacing: 0.59px;
+        color: #8a9a9d;
+        font-family: "Century Gothic", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+        font-size: 13px;
+      }
+    }
+  }
+
+  .autoWrapper5 {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    padding-right: 0;
+    padding-left: 0;
+
+    .statusBar {
+      width: 388px;
+      height: 18px;
+      overflow: hidden;
+    }
+
+    .group14 {
+      position: relative;
+      margin-top: 21px;
+      width: 159px;
+      height: 48px;
+
+      .musiumLogo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 63px;
+        height: 48px;
+      }
+
+      .search {
+        position: absolute;
+        top: 7px;
+        left: 58px;
+        width: 101px;
+        height: 33px;
+        line-height: 33px;
+        letter-spacing: 1.76px;
+        color: #00c2cb;
+        font-family: "Century Gothic", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+        font-size: 27px;
+        font-weight: 700;
+      }
+    }
+
+    .yourTopGenres {
+      margin: 97px 0px 0px 20px;
+      width: 201px;
+      height: 25px;
+      letter-spacing: 0;
+      color: #ffffff;
+      font-family: "Century Gothic", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .top {
+      margin-top: 17px;
+      margin-left: 18px;
+      width: 357px;
+      height: 209px;
+    }
+
+    .browseAll {
+      margin: 50px 0px 0px 22px;
+      width: 174px;
+      height: 25px;
+      letter-spacing: 0;
+      color: #ffffff;
+      font-family: "Century Gothic", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .autoWrapper4 {
+      position: relative;
+      margin-top: 14px;
+      margin-left: 18px;
+      width: 359px;
+      height: 325px;
+
+      .group34 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 359px;
+        height: 325px;
+      }
+
+      .bottomBar {
+        position: absolute;
+        right: -37px;
+        bottom: -55px;
+        width: 433px;
+        height: 207px;
+
+        .rectangle36 {
+          display: flex;
+          position: absolute;
+          top: 0;
+          left: 0;
+          align-items: flex-start;
+          justify-content: space-between;
+          padding: 151px 56px 14px 50px;
+          width: 433px;
+          height: 207px;
+          background-image: linear-gradient(
+            180deg,
+            #00000000 0%,
+            #000000 77.93%
+          );
+
+          .autoWrapper2 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            align-self: stretch;
+            margin-top: 1px;
+
+            .interfaceHome3 {
+              margin-left: 6px;
+              width: 19px;
+              height: 17px;
+              overflow: hidden;
+            }
+
+            .home {
+              display: flex;
+              align-items: center;
+              margin: 4px 0px 0px;
+              width: 35px;
+              height: 20px;
+              letter-spacing: 0.61px;
+              color: #ffffff;
+              font-family: "Century Gothic", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+              font-size: 11px;
+              font-weight: 700;
+            }
+          }
+
+          .explore {
+            display: flex;
+            align-items: center;
+            margin: 22px 0px 0px;
+            width: 51px;
+            height: 20px;
+            letter-spacing: 0.61px;
+            color: #00c2cb;
+            font-family: "Century Gothic", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+            font-size: 11px;
+            font-weight: 700;
+          }
+
+          .autoWrapper3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-self: stretch;
+
+            .interfaceFolderUi {
+              width: 17px;
+              height: 15px;
+              overflow: hidden;
+            }
+
+            .library {
+              display: flex;
+              align-items: center;
+              margin: 7px 0px 0px;
+              width: 41px;
+              height: 20px;
+              letter-spacing: 0.61px;
+              color: #ffffff;
+              font-family: "Century Gothic", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+              font-size: 11px;
+              font-weight: 700;
+            }
+          }
+        }
+
+        .interfaceSearch {
+          position: absolute;
+          top: 152px;
+          left: 198px;
+          width: 19px;
+          height: 19px;
+          overflow: hidden;
+          rotate: 4deg;
+        }
+      }
+    }
+  }
+}

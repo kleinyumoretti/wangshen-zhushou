@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+}
+
+.welcome {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #41c3d6;
+  padding-top: 14px;
+  padding-bottom: 361px;
+  width: 428px;
+  height: 924px;
+  overflow: hidden;
+
+  .musium {
+    position: absolute;
+    top: 643px;
+    left: 284px;
+    width: 107px;
+    height: 30px;
+  }
+
+  .statusBar {
+    margin-left: 18px;
+    width: 388px;
+    height: 18px;
+    overflow: hidden;
+  }
+
+  .a2Ellipse4 {
+    margin-top: 46px;
+    margin-left: 300px;
+    border-radius: 50%;
+    box-shadow: inset 4px -8px 19px 8px #06a0b5;
+    background: #121111;
+    width: 78px;
+    height: 78px;
+  }
+
+  .autoWrapper2 {
+    position: relative;
+    width: 428px;
+    height: 407px;
+
+    .imgGirl {
+      display: flex;
+      position: absolute;
+      top: 0;
+      left: 0;
+      align-items: flex-start;
+      padding: 70px 25px 234px 300px;
+      width: 428px;
+      height: 407px;
+      background-image: url(../image/mop46jt8-kr12c7t.png);
+      background-position: -77px -2px;
+      background-size: 214.49% 98.66%;
+      background-repeat: no-repeat;
+
+      .a2Ellipse3 {
+        border-radius: 50%;
+        box-shadow: inset 4px -8px 19px 8px #06a0b5;
+        background: #121111;
+        width: 103px;
+        height: 103px;
+      }
+    }
+
+    .a2Ellipse2 {
+      position: absolute;
+      top: -124px;
+      left: 25px;
+      border-radius: 50%;
+      box-shadow: inset 4px -8px 19px 8px #06a0b5;
+      background: #121111;
+      width: 149px;
+      height: 146px;
+    }
+
+    .blackBg {
+      display: flex;
+      position: absolute;
+      bottom: -361px;
+      left: 0;
+      flex-direction: column;
+      align-items: flex-start;
+      border: 1px solid #00000000;
+      border-radius: 54px;
+      box-shadow: inset 0px 4px 4px 0px #00000040;
+      background: #121111;
+      padding: 57px 25px 63px 24px;
+      width: 428px;
+      height: 400px;
+
+      .text5 {
+        margin: 0px 0px 0px 4px;
+        width: 365px;
+        height: 152px;
+        text-align: center;
+        line-height: 30px;
+        letter-spacing: 1.56px;
+        color: #000000;
+        font-family: "Century Gothic", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+
+        .text {
+          line-height: 30px;
+          letter-spacing: 1.56px;
+          color: #ffffff;
+          font-family: "Century Gothic", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+          font-size: 24px;
+          font-weight: 700;
+        }
+
+        .text2 {
+          line-height: 30px;
+          letter-spacing: 1.56px;
+          color: #76d7e6;
+          font-family: "Century Gothic", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+          font-size: 24px;
+          font-weight: 700;
+        }
+
+        .text3 {
+          line-height: 30px;
+          letter-spacing: 1.56px;
+          color: #7ceeff;
+          font-family: "Century Gothic", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+          font-size: 24px;
+          font-weight: 700;
+        }
+
+        .text4 {
+          line-height: 30px;
+          letter-spacing: 1.56px;
+          color: #121111;
+          font-family: "Century Gothic", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+          font-size: 24px;
+          font-weight: 700;
+        }
+      }
+
+      .autoWrapper {
+        position: relative;
+        margin-top: 18px;
+        margin-left: 136px;
+        width: 59px;
+        height: 9px;
+
+        .sliderBlue {
+          position: absolute;
+          top: 0;
+          left: 0;
+          border: 1px solid #121111;
+          border-radius: 50px;
+          box-shadow: 0px 4px 4px 0px #00000040;
+          background: #00c2cb;
+          width: 59px;
+          height: 9px;
+        }
+
+        .sliderWhite {
+          position: absolute;
+          top: 0;
+          right: -47px;
+          border: 1px solid #121111;
+          border-radius: 50px;
+          box-shadow: 0px 4px 4px 0px #00000040;
+          background: #dbe7e8;
+          width: 53px;
+          height: 9px;
+        }
+      }
+
+      .a2Button {
+        display: flex;
+        align-items: flex-start;
+        align-self: stretch;
+        margin-top: 40px;
+        border-radius: 50px;
+        box-shadow: 0px 0px 10px 1px #39c0d4;
+        background: #06a0b5;
+        padding: 18px 14px 29px 10px;
+
+        .buttonText {
+          width: 353px;
+          height: 12px;
+          text-align: center;
+          line-height: 18px;
+          letter-spacing: 0.72px;
+          color: #ffffff;
+          font-family: Mulish, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+          font-size: 16px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}

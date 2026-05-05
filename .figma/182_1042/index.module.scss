@@ -1,0 +1,428 @@
+* {
+  box-sizing: border-box;
+}
+
+.folder {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #121111;
+  padding-top: 14px;
+  padding-left: 19px;
+  width: 433px;
+  height: 922px;
+  overflow: hidden;
+
+  .addNewPlaylist {
+    width: 191px;
+    height: 27px;
+    letter-spacing: 1.2px;
+    color: #ffffff;
+    font-family: "Century Gothic", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .statusBar {
+    width: 388px;
+    height: 18px;
+    overflow: hidden;
+  }
+
+  .autoWrapper {
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+    justify-content: space-between;
+    margin-top: 37px;
+    padding-right: 178px;
+    padding-left: 9px;
+
+    .arrowLeftMd {
+      width: 28px;
+      height: 32px;
+      overflow: hidden;
+    }
+
+    .moods {
+      width: 174px;
+      height: 25px;
+      letter-spacing: 1.44px;
+      color: #ffffff;
+      font-family: "Century Gothic", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+    }
+  }
+
+  .group25 {
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    align-self: stretch;
+    justify-content: space-between;
+    margin: 42px 38px 0px 19px;
+    padding-right: 11px;
+    min-width: 357px;
+
+    .sort {
+      position: absolute;
+      top: 8px;
+      left: 340px;
+      width: 17px;
+      height: 13px;
+
+      .arrowLeftMd2 {
+        position: absolute;
+        top: 1px;
+        left: 5px;
+        width: 13px;
+        height: 11px;
+        overflow: hidden;
+        rotate: -90deg;
+      }
+
+      .arrowLeftMd3 {
+        position: absolute;
+        top: 1px;
+        left: -1px;
+        width: 13px;
+        height: 11px;
+        overflow: hidden;
+        rotate: 90deg;
+      }
+    }
+
+    .autoWrapper2 {
+      display: flex;
+      position: relative;
+      align-items: flex-start;
+      align-self: stretch;
+      justify-content: space-between;
+
+      .sortBy3 {
+        width: 86px;
+        height: 27px;
+        letter-spacing: 0;
+        color: #ffffff;
+        font-family: "Century Gothic", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+        font-size: 0;
+        font-weight: 700;
+
+        .sortBy {
+          letter-spacing: 0.96px;
+          color: #ffffff;
+          font-family: "Century Gothic", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+          font-size: 16px;
+          font-weight: 700;
+        }
+
+        .sortBy2 {
+          letter-spacing: 1.2px;
+          color: #ffffff;
+          font-family: "Century Gothic", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+          font-size: 20px;
+          font-weight: 700;
+        }
+      }
+
+      .recentlyPlayed {
+        margin: 4px 0px 0px;
+        width: 155px;
+        height: 27px;
+        letter-spacing: 0.96px;
+        color: #39c0d4;
+        font-family: "Century Gothic", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .group6 {
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+    justify-content: space-between;
+    margin: 40px 132px 0px 11px;
+    min-width: 271px;
+    height: 56px;
+
+    .ellipse1 {
+      display: flex;
+      align-items: center;
+      border-radius: 50%;
+      box-shadow: 0px 0px 2px 0px #00c2cb;
+      padding: 17px 16px 16px;
+      background-image: linear-gradient(
+        180deg,
+        #a6f3ff -15.18%,
+        #00c2cb 84.82%
+      );
+
+      .interfaceAddLg {
+        width: 24px;
+        height: 24px;
+        overflow: hidden;
+      }
+    }
+  }
+
+  .autoWrapper11 {
+    position: relative;
+    margin-top: 37px;
+    margin-left: 15px;
+    width: 537px;
+    height: 889px;
+
+    .group37 {
+      display: flex;
+      position: absolute;
+      top: 0;
+      left: 0;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 537px;
+      height: 889px;
+
+      .group9 {
+        display: flex;
+        align-items: center;
+        align-self: stretch;
+        justify-content: space-between;
+        margin: 34px 199px 0px 3px;
+        min-width: 331px;
+        height: 82px;
+
+        .image14 {
+          width: 84px;
+          height: 82px;
+        }
+
+        .autoWrapper8 {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          align-self: stretch;
+
+          .rainOnMyWindow {
+            width: 226px;
+            height: 27px;
+            letter-spacing: 1.2px;
+            color: #ffffff;
+            font-family: "Century Gothic", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+          }
+        }
+      }
+
+      .group4 {
+        display: flex;
+        align-items: center;
+        align-self: stretch;
+        justify-content: space-between;
+        margin-top: 29px;
+        margin-left: 3px;
+        min-width: 530px;
+        height: 82px;
+
+        .autoWrapper7 {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          align-self: stretch;
+
+          .lofiLoft {
+            width: 425px;
+            height: 27px;
+            letter-spacing: 1.2px;
+            color: #ffffff;
+            font-family: "Century Gothic", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+          }
+        }
+      }
+
+      .autoWrapper6 {
+        display: flex;
+        align-items: flex-start;
+        align-self: stretch;
+        justify-content: space-between;
+        margin-top: 33px;
+        padding-right: 235px;
+        padding-left: 2px;
+
+        .image15 {
+          width: 84px;
+          height: 84px;
+        }
+
+        .autoWrapper5 {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          align-self: stretch;
+          margin-top: 14px;
+        }
+      }
+
+      .autoWrapper4 {
+        display: flex;
+        align-items: center;
+        align-self: stretch;
+        justify-content: space-between;
+        padding-right: 237px;
+        padding-left: 0;
+
+        .autoWrapper3 {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          align-self: stretch;
+        }
+      }
+
+      .group42 {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: flex-start;
+        align-self: stretch;
+        margin-right: 4px;
+
+        .rectangle30 {
+          border-radius: 5px;
+          width: 84px;
+          height: 82px;
+        }
+
+        .a20Songs {
+          width: 191px;
+          height: 27px;
+          letter-spacing: 0.83px;
+          color: #8a9a9d;
+          font-family: "Century Gothic", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+          font-size: 15px;
+          font-weight: 700;
+        }
+
+        .rectangle41 {
+          position: absolute;
+          top: 365px;
+          left: 329px;
+          width: 140px;
+          height: 22px;
+        }
+      }
+
+      .group43 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        align-self: stretch;
+        margin-top: 37px;
+        margin-left: 4px;
+      }
+    }
+
+    .bottomBar {
+      position: absolute;
+      top: 411px;
+      left: -32px;
+      width: 433px;
+      height: 207px;
+
+      .rectangle36 {
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 151px 56px 14px 50px;
+        width: 433px;
+        height: 207px;
+        background-image: linear-gradient(180deg, #00000000 0%, #000000 77.93%);
+
+        .autoWrapper9 {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          align-self: stretch;
+          margin-top: 1px;
+
+          .interfaceHome3 {
+            margin-left: 6px;
+            width: 19px;
+            height: 17px;
+            overflow: hidden;
+          }
+
+          .home {
+            display: flex;
+            align-items: center;
+            margin: 4px 0px 0px;
+            width: 35px;
+            height: 20px;
+            letter-spacing: 0.61px;
+            color: #ffffff;
+            font-family: "Century Gothic", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+            font-size: 11px;
+            font-weight: 700;
+          }
+        }
+
+        .explore {
+          display: flex;
+          align-items: center;
+          margin: 22px 0px 0px;
+          width: 51px;
+          height: 20px;
+          letter-spacing: 0.61px;
+          color: #ffffff;
+          font-family: "Century Gothic", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+          font-size: 11px;
+          font-weight: 700;
+        }
+
+        .autoWrapper10 {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          align-self: stretch;
+
+          .interfaceFolderUi {
+            width: 17px;
+            height: 15px;
+            overflow: hidden;
+          }
+
+          .library {
+            display: flex;
+            align-items: center;
+            margin: 7px 0px 0px;
+            width: 41px;
+            height: 20px;
+            letter-spacing: 0.61px;
+            color: #00c2cb;
+            font-family: "Century Gothic", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+            font-size: 11px;
+            font-weight: 700;
+          }
+        }
+      }
+
+      .interfaceSearch {
+        position: absolute;
+        top: 152px;
+        left: 198px;
+        width: 19px;
+        height: 19px;
+        overflow: hidden;
+        rotate: 4deg;
+      }
+    }
+  }
+}

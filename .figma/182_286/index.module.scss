@@ -1,0 +1,361 @@
+* {
+  box-sizing: border-box;
+}
+
+.playlist {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #121111;
+  padding-top: 14px;
+  width: 433px;
+  height: 922px;
+  overflow: hidden;
+
+  .rectangle30 {
+    border-radius: 5px;
+    width: 53px;
+    height: 52px;
+  }
+
+  .autoWrapper2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+
+    .grainyDays {
+      width: 262px;
+      height: 20px;
+      letter-spacing: 0.96px;
+      color: #ffffff;
+      font-family: "Century Gothic", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .moody {
+      margin: 6px 0px 0px;
+      width: 141px;
+      height: 20px;
+      letter-spacing: 0.66px;
+      color: #8a9a9d;
+      font-family: "Century Gothic", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+    }
+  }
+
+  .group4 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 328px;
+    min-width: 328px;
+  }
+
+  .statusBar {
+    margin-left: 19px;
+    width: 388px;
+    height: 18px;
+    overflow: hidden;
+  }
+
+  .autoWrapper {
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+    margin-top: 29px;
+    padding-right: 32px;
+    padding-left: 19px;
+
+    .arrowLeftMd {
+      width: 28px;
+      height: 32px;
+      overflow: hidden;
+    }
+
+    .fRomplaylists {
+      margin: 7px 0px 0px 109px;
+      width: 121px;
+      height: 18px;
+      letter-spacing: 0.72px;
+      color: #ffffff;
+      font-family: "Century Gothic", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+      font-size: 12px;
+    }
+
+    .interfaceOption {
+      margin-top: 1px;
+      margin-left: 100px;
+      width: 24px;
+      height: 24px;
+      overflow: hidden;
+      rotate: -90deg;
+    }
+  }
+
+  .rectangle18 {
+    margin-top: 29px;
+    margin-left: 85px;
+    border-radius: 4px;
+    width: 263px;
+    height: 252px;
+  }
+
+  .lofiLoft {
+    margin: 21px 0px 0px;
+    width: 433px;
+    height: 27px;
+    text-align: center;
+    letter-spacing: 3.23px;
+    color: #ffffff;
+    font-family: "Century Gothic", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+  }
+
+  .softChillDreamyLoFiB {
+    margin: 18px 0px 0px;
+    width: 433px;
+    height: 21px;
+    text-align: center;
+    letter-spacing: 0.78px;
+    color: #ffffffb2;
+    font-family: "Century Gothic", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  .autoWrapper3 {
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+    justify-content: space-between;
+    margin-top: 41px;
+    padding-right: 41px;
+    padding-left: 33px;
+
+    .interfaceOption2 {
+      margin-top: 5px;
+      width: 15px;
+      height: 15px;
+      overflow: hidden;
+      rotate: -90deg;
+    }
+  }
+
+  .autoWrapper4 {
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+    justify-content: space-between;
+    margin-top: 11px;
+    padding-right: 43px;
+    padding-left: 33px;
+
+    .interfaceOption3 {
+      margin-top: 3px;
+      width: 15px;
+      height: 15px;
+      overflow: hidden;
+      rotate: -90deg;
+    }
+  }
+
+  .autoWrapper5 {
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+    justify-content: space-between;
+    margin-top: 11px;
+    padding-right: 43px;
+    padding-left: 33px;
+
+    .interfaceOption4 {
+      margin-top: 2px;
+      width: 15px;
+      height: 15px;
+      overflow: hidden;
+      rotate: -90deg;
+    }
+  }
+
+  .interfaceOption5 {
+    margin-top: 13px;
+    margin-left: 375px;
+    width: 15px;
+    height: 15px;
+    overflow: hidden;
+    rotate: -90deg;
+  }
+
+  .autoWrapper9 {
+    position: relative;
+    margin-top: 10px;
+    width: 433px;
+    height: 207px;
+
+    .group42 {
+      display: flex;
+      position: absolute;
+      top: -27px;
+      left: 33px;
+      align-items: flex-start;
+      justify-content: space-between;
+      width: 328px;
+      height: 52px;
+    }
+
+    .interfaceOption6 {
+      position: absolute;
+      top: 99px;
+      left: 375px;
+      width: 15px;
+      height: 15px;
+      overflow: hidden;
+      rotate: -90deg;
+    }
+
+    .interfaceOption7 {
+      position: absolute;
+      top: 38px;
+      left: 375px;
+      width: 15px;
+      height: 15px;
+      overflow: hidden;
+      rotate: -90deg;
+    }
+
+    .bottomBar {
+      display: flex;
+      position: absolute;
+      top: 0;
+      left: 0;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 36px 72px 56px 33px;
+      width: 433px;
+      height: 207px;
+
+      .group43 {
+        display: flex;
+        align-items: flex-start;
+        align-self: stretch;
+        justify-content: space-between;
+        min-width: 328px;
+      }
+
+      .group44 {
+        display: flex;
+        align-items: flex-start;
+        align-self: stretch;
+        justify-content: space-between;
+        margin-top: 11px;
+        min-width: 328px;
+      }
+
+      .autoWrapper8 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 433px;
+        height: 207px;
+
+        .rectangle36 {
+          display: flex;
+          position: absolute;
+          top: 0;
+          left: 0;
+          align-items: flex-start;
+          justify-content: space-between;
+          padding: 151px 56px 14px 50px;
+          width: 433px;
+          height: 207px;
+          background-image: linear-gradient(
+            180deg,
+            #00000000 0%,
+            #000000 77.93%
+          );
+
+          .autoWrapper6 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            align-self: stretch;
+            margin-top: 1px;
+
+            .interfaceHome3 {
+              margin-left: 6px;
+              width: 19px;
+              height: 17px;
+              overflow: hidden;
+            }
+
+            .home {
+              display: flex;
+              align-items: center;
+              margin: 4px 0px 0px;
+              width: 35px;
+              height: 20px;
+              letter-spacing: 0.61px;
+              color: #ffffff;
+              font-family: "Century Gothic", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+              font-size: 11px;
+              font-weight: 700;
+            }
+          }
+
+          .explore {
+            display: flex;
+            align-items: center;
+            margin: 22px 0px 0px;
+            width: 51px;
+            height: 20px;
+            letter-spacing: 0.61px;
+            color: #ffffff;
+            font-family: "Century Gothic", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+            font-size: 11px;
+            font-weight: 700;
+          }
+
+          .autoWrapper7 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-self: stretch;
+
+            .interfaceFolderUi {
+              width: 17px;
+              height: 15px;
+              overflow: hidden;
+            }
+
+            .library {
+              display: flex;
+              align-items: center;
+              margin: 7px 0px 0px;
+              width: 41px;
+              height: 20px;
+              letter-spacing: 0.61px;
+              color: #00c2cb;
+              font-family: "Century Gothic", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+              font-size: 11px;
+              font-weight: 700;
+            }
+          }
+        }
+
+        .interfaceSearch {
+          position: absolute;
+          top: 152px;
+          left: 198px;
+          width: 19px;
+          height: 19px;
+          overflow: hidden;
+          rotate: 4deg;
+        }
+      }
+    }
+  }
+}

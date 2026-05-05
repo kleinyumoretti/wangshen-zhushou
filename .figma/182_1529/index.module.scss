@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+.launchScreen {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #121111;
+  padding: 14px 20px 359px 19px;
+  width: 433px;
+  height: 922px;
+  overflow: hidden;
+
+  .statusBar {
+    width: 388px;
+    height: 18px;
+    overflow: hidden;
+  }
+
+  .musiumLogo {
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+    margin-top: 194px;
+    margin-left: 3px;
+    padding: 290px 115px 0px 107px;
+    background-image: url(../image/mop46jqk-9ubsme3.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .musium {
+      width: 169px;
+      height: 47px;
+    }
+  }
+}

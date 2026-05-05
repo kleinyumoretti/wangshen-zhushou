@@ -1,0 +1,461 @@
+* {
+  box-sizing: border-box;
+}
+
+.albums2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #121111;
+  padding-top: 14px;
+  padding-bottom: 43px;
+  width: 433px;
+  height: 922px;
+  overflow: hidden;
+
+  .interfaceSearch {
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+  }
+
+  .statusBar {
+    margin-left: 19px;
+    width: 388px;
+    height: 18px;
+    overflow: hidden;
+  }
+
+  .autoWrapper {
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+    justify-content: space-between;
+    margin-top: 24px;
+    padding-right: 31px;
+    padding-left: 19px;
+
+    .group15 {
+      position: relative;
+      width: 239px;
+      height: 48px;
+
+      .musiumLogo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 63px;
+        height: 48px;
+      }
+
+      .yourLibrary {
+        position: absolute;
+        top: 7px;
+        left: 58px;
+        width: 181px;
+        height: 33px;
+        line-height: 33px;
+        letter-spacing: 2.43px;
+        color: #00c2cb;
+        font-family: "Century Gothic", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+        font-size: 27px;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .filter {
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+    justify-content: space-between;
+    margin-top: 24px;
+    margin-left: -62px;
+    min-width: 495px;
+    height: 28px;
+
+    .rectangle37 {
+      display: flex;
+      align-items: center;
+      border: 1px solid #ffffff;
+      border-radius: 23px;
+      padding: 4px 10px 5px 16px;
+
+      .folders {
+        width: 45px;
+        height: 18px;
+        letter-spacing: 0.72px;
+        color: #ffffff;
+        font-family: "Century Gothic", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+        font-size: 12px;
+      }
+    }
+
+    .rectangle372 {
+      display: flex;
+      align-items: center;
+      border: 1px solid #ffffff;
+      border-radius: 23px;
+      padding: 4px 13px 5px 16px;
+
+      .playlists {
+        width: 49px;
+        height: 18px;
+        letter-spacing: 0.72px;
+        color: #ffffff;
+        font-family: "Century Gothic", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+        font-size: 12px;
+      }
+    }
+
+    .rectangle373 {
+      display: flex;
+      align-items: center;
+      border: 1px solid #ffffff;
+      border-radius: 23px;
+      padding: 4px 14px 5px 12px;
+
+      .artists {
+        width: 37px;
+        height: 18px;
+        text-align: center;
+        letter-spacing: 0.72px;
+        color: #ffffff;
+        font-family: "Century Gothic", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+        font-size: 12px;
+      }
+    }
+
+    .rectangle374 {
+      display: flex;
+      align-items: center;
+      border-radius: 23px;
+      padding: 5px 7px 6px 17px;
+      background-image: linear-gradient(180deg, #15686b 0%, #06a0b5 100%);
+
+      .albums {
+        width: 55px;
+        height: 17px;
+        letter-spacing: 0.72px;
+        color: #ffffff;
+        font-family: "Century Gothic", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+        font-size: 12px;
+      }
+    }
+
+    .rectangle375 {
+      display: flex;
+      align-items: center;
+      border: 1px solid #ffffff;
+      border-radius: 23px;
+      padding: 4px 20px 5px 19px;
+
+      .podcastsShows {
+        width: 116px;
+        height: 17px;
+        text-align: center;
+        letter-spacing: 0.72px;
+        color: #ffffff;
+        font-family: "Century Gothic", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .group5 {
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+    justify-content: space-between;
+    margin: 40px 105px 0px 31px;
+    min-width: 297px;
+
+    .ellipse2 {
+      display: flex;
+      align-items: center;
+      border-radius: 50%;
+      box-shadow: 0px 0px 2px 0px #00c2cb;
+      padding: 16px;
+      background-image: linear-gradient(
+        180deg,
+        #a6f3ff -15.18%,
+        #00c2cb 84.82%
+      );
+    }
+
+    .yourLikedPodcasts {
+      margin: 13px 0px 0px;
+      width: 222px;
+      height: 27px;
+      letter-spacing: 1.2px;
+      color: #ffffff;
+      font-family: "Century Gothic", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+    }
+  }
+
+  .recent {
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+    justify-content: space-between;
+    margin: 40px 230px 0px 26px;
+    min-width: 177px;
+
+    .sort {
+      position: relative;
+      margin-top: 3px;
+      width: 17px;
+      height: 13px;
+
+      .arrowLeftMd {
+        position: absolute;
+        top: 1px;
+        left: 5px;
+        width: 13px;
+        height: 11px;
+        overflow: hidden;
+        rotate: -90deg;
+      }
+
+      .arrowLeftMd2 {
+        position: absolute;
+        top: 1px;
+        left: -1px;
+        width: 13px;
+        height: 11px;
+        overflow: hidden;
+        rotate: 90deg;
+      }
+    }
+
+    .recentlyAdded {
+      width: 155px;
+      height: 27px;
+      letter-spacing: 0.96px;
+      color: #39c0d4;
+      font-family: "Century Gothic", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+    }
+  }
+
+  .autoWrapper8 {
+    position: relative;
+    margin-top: 18px;
+    margin-left: 32px;
+    width: 345px;
+    height: 542px;
+
+    .group43 {
+      display: flex;
+      position: absolute;
+      top: 0;
+      left: 0;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 345px;
+      height: 542px;
+
+      .rectangle30 {
+        border-radius: 5px;
+        width: 84px;
+        height: 82px;
+      }
+
+      .conanGray {
+        width: 191px;
+        height: 27px;
+        letter-spacing: 0.83px;
+        color: #8a9a9d;
+        font-family: "Century Gothic", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        font-weight: 700;
+      }
+
+      .autoWrapper2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: stretch;
+
+        .superache {
+          width: 191px;
+          height: 27px;
+          letter-spacing: 1.2px;
+          color: #ffffff;
+          font-family: "Century Gothic", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+          font-size: 20px;
+          font-weight: 700;
+        }
+      }
+
+      .group4 {
+        display: flex;
+        align-items: center;
+        align-self: stretch;
+        justify-content: space-between;
+        margin-right: 49px;
+        min-width: 296px;
+        height: 82px;
+      }
+
+      .autoWrapper3 {
+        display: flex;
+        align-items: center;
+        align-self: stretch;
+        justify-content: space-between;
+        margin-top: 34px;
+        padding-right: 49px;
+        padding-left: 0;
+      }
+
+      .autoWrapper4 {
+        display: flex;
+        align-items: center;
+        align-self: stretch;
+        justify-content: space-between;
+        margin-top: 33px;
+        padding-right: 47px;
+        padding-left: 2px;
+      }
+
+      .group42 {
+        display: flex;
+        align-items: center;
+        align-self: stretch;
+        justify-content: space-between;
+        margin: 31px 46px 0px 3px;
+        min-width: 296px;
+        height: 82px;
+      }
+
+      .group9 {
+        display: flex;
+        align-items: center;
+        align-self: stretch;
+        justify-content: space-between;
+        margin-top: 34px;
+        margin-left: 3px;
+        min-width: 342px;
+        height: 82px;
+
+        .autoWrapper5 {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          align-self: stretch;
+
+          .bloom {
+            width: 237px;
+            height: 27px;
+            letter-spacing: 1.2px;
+            color: #ffffff;
+            font-family: "Century Gothic", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+
+    .bottomBar {
+      position: absolute;
+      right: -58px;
+      bottom: -46px;
+      width: 433px;
+      height: 207px;
+
+      .rectangle36 {
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 151px 56px 14px 50px;
+        width: 433px;
+        height: 207px;
+        background-image: linear-gradient(180deg, #00000000 0%, #000000 77.93%);
+
+        .autoWrapper6 {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          align-self: stretch;
+          margin-top: 1px;
+
+          .interfaceHome3 {
+            margin-left: 6px;
+            width: 19px;
+            height: 17px;
+            overflow: hidden;
+          }
+
+          .home {
+            display: flex;
+            align-items: center;
+            margin: 4px 0px 0px;
+            width: 35px;
+            height: 20px;
+            letter-spacing: 0.61px;
+            color: #ffffff;
+            font-family: "Century Gothic", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+            font-size: 11px;
+            font-weight: 700;
+          }
+        }
+
+        .explore {
+          display: flex;
+          align-items: center;
+          margin: 22px 0px 0px;
+          width: 51px;
+          height: 20px;
+          letter-spacing: 0.61px;
+          color: #ffffff;
+          font-family: "Century Gothic", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+          font-size: 11px;
+          font-weight: 700;
+        }
+
+        .autoWrapper7 {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          align-self: stretch;
+
+          .interfaceFolderUi {
+            width: 17px;
+            height: 15px;
+            overflow: hidden;
+          }
+
+          .library {
+            display: flex;
+            align-items: center;
+            margin: 7px 0px 0px;
+            width: 41px;
+            height: 20px;
+            letter-spacing: 0.61px;
+            color: #00c2cb;
+            font-family: "Century Gothic", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+            font-size: 11px;
+            font-weight: 700;
+          }
+        }
+      }
+
+      .interfaceSearch2 {
+        position: absolute;
+        top: 152px;
+        left: 198px;
+        width: 19px;
+        height: 19px;
+        overflow: hidden;
+        rotate: 4deg;
+      }
+    }
+  }
+}

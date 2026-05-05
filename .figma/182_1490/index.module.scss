@@ -1,0 +1,247 @@
+* {
+  box-sizing: border-box;
+}
+
+.signIn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #121111;
+  padding: 15px 15px 60px 20px;
+  width: 428px;
+  height: 922px;
+  overflow: hidden;
+
+  .or {
+    width: 353px;
+    height: 12px;
+    text-align: center;
+    line-height: 18px;
+    letter-spacing: 0.72px;
+    color: #ffffff;
+    font-family: Mulish, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .statusBar {
+    width: 388px;
+    height: 18px;
+    overflow: hidden;
+  }
+
+  .autoWrapper {
+    position: relative;
+    margin-top: 43px;
+    margin-left: 31px;
+    width: 325px;
+    height: 254px;
+
+    .arrowLeftMd {
+      position: absolute;
+      top: -16px;
+      left: -26px;
+      width: 28px;
+      height: 32px;
+      overflow: hidden;
+    }
+
+    .musiumLogo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 325px;
+      height: 254px;
+    }
+  }
+
+  .letSGetYouIn {
+    margin: 32px 0px 0px 24px;
+    line-height: 50px;
+    letter-spacing: 1.1px;
+    color: #ffffff;
+    font-family: "Century Gothic", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+    font-size: 44px;
+    font-weight: 700;
+  }
+
+  .a2Button {
+    position: relative;
+    margin-top: 47px;
+    margin-left: 5px;
+    outline-width: 1px;
+    outline-style: solid;
+    outline-color: #dbe7e8;
+    border-radius: 10px;
+    background: #1e1e1e;
+    width: 377px;
+    height: 59px;
+
+    .google {
+      position: absolute;
+      top: 18px;
+      left: 24px;
+      width: 353px;
+      height: 13px;
+      text-align: center;
+      line-height: 18px;
+      letter-spacing: 0.72px;
+      color: #ffffff;
+      font-family: "Century Gothic", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .google1 {
+      position: absolute;
+      top: 13px;
+      left: 65px;
+      width: 33px;
+      height: 33px;
+    }
+  }
+
+  .fb2 {
+    position: relative;
+    margin-top: 19px;
+    margin-left: 5px;
+    width: 388px;
+    height: 59px;
+
+    .a2Button2 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      outline-width: 1px;
+      outline-style: solid;
+      outline-color: #dbe7e8;
+      border-radius: 10px;
+      background: #1e1e1e;
+      width: 377px;
+      height: 59px;
+    }
+
+    .fb {
+      position: absolute;
+      top: 15px;
+      left: 35px;
+      width: 353px;
+      height: 12px;
+      text-align: center;
+      line-height: 18px;
+      letter-spacing: 0.72px;
+      color: #ffffff;
+      font-family: "Century Gothic", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .e1 {
+      position: absolute;
+      top: 7px;
+      left: 59px;
+      width: 39px;
+      height: 39px;
+    }
+  }
+
+  .a2Button3 {
+    position: relative;
+    margin-top: 17px;
+    margin-left: 5px;
+    outline-width: 1px;
+    outline-style: solid;
+    outline-color: #dbe7e8;
+    border-radius: 10px;
+    background: #1e1e1e;
+    width: 377px;
+    height: 59px;
+
+    .apple {
+      position: absolute;
+      top: 15px;
+      left: 19px;
+      width: 353px;
+      height: 12px;
+      text-align: center;
+      line-height: 18px;
+      letter-spacing: 0.72px;
+      color: #ffffff;
+      font-family: "Century Gothic", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .e11 {
+      position: absolute;
+      top: 5px;
+      left: 61px;
+      width: 37px;
+      height: 38px;
+    }
+  }
+
+  .or2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    margin: 38px 23px 0px 17px;
+    height: 12px;
+
+    .line1 {
+      background: #ffffff;
+      width: 150px;
+      height: 1px;
+    }
+
+    .line2 {
+      margin-top: -1px;
+      margin-left: 200px;
+      background: #ffffff;
+      width: 153px;
+      height: 1px;
+    }
+  }
+
+  .blueButton {
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+    margin: 47px 11px 0px 5px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px 1px #39c0d4;
+    background: #06a0b5;
+    padding: 18px 12px 29px;
+  }
+
+  .donTHave3 {
+    margin: 22px 0px 0px 14px;
+    width: 353px;
+    height: 12px;
+    text-align: center;
+    line-height: 18px;
+    letter-spacing: 0.72px;
+    color: #000000;
+    font-size: 16px;
+    text-shadow: 0px 2px 20px #06a0b5;
+
+    .donTHave {
+      line-height: 18px;
+      letter-spacing: 0.72px;
+      color: #ffffff;
+      font-family: Mulish, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .donTHave2 {
+      line-height: 18px;
+      letter-spacing: 0.72px;
+      color: #7ceeff;
+      font-family: Mulish, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+    }
+  }
+}

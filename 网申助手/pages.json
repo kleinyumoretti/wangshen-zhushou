@@ -1,0 +1,78 @@
+{
+	"pages": [
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "求职管理中心",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/resume/resume",
+			"style": {
+				"navigationBarTitleText": "简历管理",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/records/records",
+			"style": {
+				"navigationBarTitleText": "投递记录",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/calendar/calendar",
+			"style": {
+				"navigationBarTitleText": "日历",
+				"navigationStyle": "custom"
+			}
+		}
+	],
+	"tabBar": {
+		"color": "#999999",
+		"selectedColor": "#333333",
+		"backgroundColor": "#FFFFFF",
+		"borderStyle": "black",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "static/c1.png",
+				"selectedIconPath": "static/c2.png"
+			},
+			{
+				"pagePath": "pages/records/records",
+				"text": "记录",
+				"iconPath": "static/c3.png",
+				"selectedIconPath": "static/c4.png"
+			},
+			{
+				"pagePath": "pages/resume/resume",
+				"text": "简历",
+				"iconPath": "static/c5.png",
+				"selectedIconPath": "static/c6.png"
+			},
+			{
+				"pagePath": "pages/calendar/calendar",
+				"text": "日历",
+				"iconPath": "static/c7.png",
+				"selectedIconPath": "static/c8.png"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "网申助手",
+		"navigationBarBackgroundColor": "#F5F5F0",
+		"backgroundColor": "#F5F5F0"
+	},
+	"uniIdRouter": {}
+}

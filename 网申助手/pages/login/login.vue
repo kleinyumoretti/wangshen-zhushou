@@ -41,7 +41,7 @@ export default {
       uni.showLoading({ title: '登录中...' })
       setTimeout(() => {
         uni.hideLoading()
-        uni.switchTab({ url: '/pages/index/index' })
+        uni.navigateTo({ url: '/pages/index/index' })
       }, 1000)
     },
     handleOtherLogin() {

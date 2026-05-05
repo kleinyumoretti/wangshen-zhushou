@@ -36,38 +36,6 @@
 			}
 		}
 	],
-	"tabBar": {
-		"color": "#999999",
-		"selectedColor": "#333333",
-		"backgroundColor": "#FFFFFF",
-		"borderStyle": "black",
-		"list": [
-			{
-				"pagePath": "pages/index/index",
-				"text": "首页",
-				"iconPath": "static/c1.png",
-				"selectedIconPath": "static/c2.png"
-			},
-			{
-				"pagePath": "pages/records/records",
-				"text": "记录",
-				"iconPath": "static/c3.png",
-				"selectedIconPath": "static/c4.png"
-			},
-			{
-				"pagePath": "pages/resume/resume",
-				"text": "简历",
-				"iconPath": "static/c5.png",
-				"selectedIconPath": "static/c6.png"
-			},
-			{
-				"pagePath": "pages/calendar/calendar",
-				"text": "日历",
-				"iconPath": "static/c7.png",
-				"selectedIconPath": "static/c8.png"
-			}
-		]
-	},
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "网申助手",

@@ -4,7 +4,7 @@
       <view 
         class="nav-item" 
         :class="{ active: currentIndex === 0 }"
-        @click="switchTab(0, '/pages/index/index')"
+        @click="switchPage(0, '/pages/index/index')"
       >
         <image class="img" src="/static/Home.png" />
         <text class="nav-text">首页</text>
@@ -12,7 +12,7 @@
       <view 
         class="nav-item" 
         :class="{ active: currentIndex === 1 }"
-        @click="switchTab(1, '/pages/records/records')"
+        @click="switchPage(1, '/pages/records/records')"
       >
         <image class="img" src="/static/direc.png" />
         <text class="nav-text">投递记录</text>
@@ -20,7 +20,7 @@
       <view 
         class="nav-item" 
         :class="{ active: currentIndex === 2 }"
-        @click="switchTab(2, '/pages/resume/resume')"
+        @click="switchPage(2, '/pages/resume/resume')"
       >
         <image class="img" src="/static/PDF.png" />
         <text class="nav-text">简历管理</text>
@@ -28,7 +28,7 @@
       <view 
         class="nav-item" 
         :class="{ active: currentIndex === 3 }"
-        @click="switchTab(3, '/pages/calendar/calendar')"
+        @click="switchPage(3, '/pages/calendar/calendar')"
       >
         <image class="img" src="/static/note.png" />
         <text class="nav-text">日历</text>
@@ -63,9 +63,9 @@ export default {
     }
   },
   methods: {
-    switchTab(index, path) {
+    switchPage(index, path) {
       if (this.currentIndex !== index) {
-        uni.switchTab({ url: path })
+        uni.navigateTo({ url: path })
       }
     }
   }
@@ -77,13 +77,13 @@ export default {
   position: fixed;
   left: 0;
   right: 0;
-  bottom: 16px;
-  height: 80px;
+  bottom: 2px;
+  height: 45px;
   background: transparent;
   z-index: 999;
   display: flex;
   justify-content: center;
-  padding: 9px 0px;
+  padding: 9px 2px;
 }
 
 .nav-content {
@@ -122,21 +122,10 @@ export default {
 
 .nav-item.active {
   color: #444548;
-  
-  .nav-icon {
-    transform: scale(1.1);
-  }
 }
 
 .nav-item:not(.active):active {
   background: rgba(0, 0, 0, 0.03);
-}
-
-.nav-icon {
-  font-size: 22px;
-  margin-bottom: 4px;
-  transition: transform 0.2s ease;
-  line-height: 1;
 }
 
 .nav-text {
@@ -145,8 +134,16 @@ export default {
   line-height: 1;
 }
 
-.nav-item.active .nav-icon,
 .nav-item.active .nav-text {
   color: #444548;
+}
+
+.nav-item.active .img {
+  opacity: 1;
+}
+
+.img {
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
 }
 </style>

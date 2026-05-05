@@ -35,6 +35,9 @@
         <text>今日：{{ todayText }}</text>
       </view>
     </view>
+
+    <!-- 底部导航 -->
+    <bottom-nav currentPath="/pages/calendar/calendar"></bottom-nav>
   </view>
 </template>
 
@@ -116,6 +119,7 @@ export default {
   flex-direction: column;
   align-items: center;
   padding: 40px 20px;
+  padding-bottom: 100px;
   box-sizing: border-box;
 }
 
@@ -125,7 +129,7 @@ export default {
   max-width: 420px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 22px;
 }
 
 /* 顶部年月标题栏 - 新拟态 */
@@ -133,7 +137,7 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 24px;
+  padding: 8px 20px;
   border-radius: 20px;
   box-shadow: 
     8px 8px 16px #E0DFDB,
@@ -204,7 +208,7 @@ export default {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   gap: 12px;
-  padding: 20px;
+  padding: 18px;
   border-radius: 20px;
   box-shadow: 
     8px 8px 16px #E0DFDB,
@@ -218,7 +222,7 @@ export default {
   align-items: center;
   justify-content: center;
   border-radius: 12px;
-  font-size: 16px;
+  font-size: 13px;
   color: #444548;
   background: #F5F3EF;
   box-shadow: 
@@ -263,14 +267,14 @@ export default {
 
 /* 底部快捷卡片 */
 .calendar-footer {
-  padding: 18px;
+  padding: 12px;
   border-radius: 20px;
   box-shadow: 
     8px 8px 16px #E0DFDB,
     -8px -8px 16px #FFFFFF;
   text-align: center;
   color: #888A8F;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .calendar-footer text {

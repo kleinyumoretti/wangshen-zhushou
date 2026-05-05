@@ -33,6 +33,9 @@
         </view>
       </view>
     </view>
+
+    <!-- 底部导航 -->
+    <bottom-nav currentPath="/pages/index/index"></bottom-nav>
   </view>
 </template>
 
@@ -64,6 +67,7 @@ export default {
   flex-direction: column;
   align-items: center;
   padding: 40px 20px;
+  padding-bottom: 100px;
   box-sizing: border-box;
 }
 

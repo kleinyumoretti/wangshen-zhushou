@@ -46,13 +46,13 @@ export default {
   },
   methods: {
     goToRecords() {
-      uni.switchTab({ url: '/pages/records/records' })
+      uni.reLaunch({ url: '/pages/records/records' })
     },
     goToResume() {
-      uni.switchTab({ url: '/pages/resume/resume' })
+      uni.reLaunch({ url: '/pages/resume/resume' })
     },
     goToCalendar() {
-      uni.switchTab({ url: '/pages/calendar/calendar' })
+      uni.reLaunch({ url: '/pages/calendar/calendar' })
     }
   }
 }

@@ -199,7 +199,7 @@ export default {
 .th {
   flex: 1;
   text-align: left;
-  font-size: 14px;
+  font-size: 12px;
   color: #888A8F;
   font-weight: 500;
 }
@@ -207,7 +207,7 @@ export default {
 /* 表格行 */
 .table-row {
   display: flex;
-  padding: 14px 0;
+  padding: 12px 0;
   border-bottom: 1px solid #EAE8E3;
 }
 
@@ -217,7 +217,7 @@ export default {
 
 .td {
   flex: 1;
-  font-size: 15px;
+  font-size: 12px;
   color: #444548;
   display: flex;
   align-items: center;
@@ -236,13 +236,13 @@ export default {
 }
 
 .status-tag text {
-  font-size: 12px;
+  font-size: 11px;
   color: #444548;
 }
 
 /* 网址样式 */
 .url-text {
   color: #888A8F;
-  font-size: 13px;
+  font-size: 12px;
 }
 </style>

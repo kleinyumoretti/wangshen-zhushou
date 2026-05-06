@@ -209,7 +209,7 @@ export default {
 
 .th {
   text-align: left;
-  font-size: 14px;
+  font-size: 12px;
   color: #888A8F;
   font-weight: 500;
   
@@ -225,7 +225,7 @@ export default {
 /* 表格行 */
 .table-row {
   display: flex;
-  padding: 16px 0;
+  padding: 14px 0;
   border-bottom: 1px solid #EAE8E3;
 }
 
@@ -234,7 +234,7 @@ export default {
 }
 
 .td {
-  font-size: 15px;
+  font-size: 14px;
   color: #444548;
   
   &:first-child {

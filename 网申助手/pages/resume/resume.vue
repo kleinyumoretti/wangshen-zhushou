@@ -34,10 +34,10 @@
             <view class="td">
               <view class="action-btns">
                 <view class="edit-btn" @click="editResume(resume)">
-                  <text>下载</text>
+                  <image class="download" src="/static/download.png" />
                 </view>
                 <view class="del-btn" @click="deleteResume(resume)">
-                  <text>删除</text>
+                  <image class="del" src="/static/delete.png" />
                 </view>
               </view>
             </view>
@@ -79,6 +79,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.download{
+	width: 19px;
+	height: 19px;
+}
+.del{
+  width: 19px;
+  height: 19px;
+}
 .page-wrapper {
   width: 100%;
   min-height: 100vh;

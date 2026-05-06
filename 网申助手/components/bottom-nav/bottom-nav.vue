@@ -65,7 +65,7 @@ export default {
   methods: {
     switchPage(index, path) {
       if (this.currentIndex !== index) {
-        uni.navigateTo({ url: path })
+        uni.navigateTo({ url: path, animationType: 'none' })
       }
     }
   }

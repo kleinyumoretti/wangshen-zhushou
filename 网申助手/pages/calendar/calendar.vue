@@ -142,6 +142,7 @@ export default {
   box-shadow: 
     8px 8px 16px #E0DFDB,
     -8px -8px 16px #FFFFFF;
+	margin-top: 150rpx;
 }
 
 .month-title {

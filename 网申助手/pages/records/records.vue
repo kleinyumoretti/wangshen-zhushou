@@ -110,6 +110,7 @@ export default {
   font-weight: 500;
   color: #444548;
   text-align: center;
+  margin-top: 150rpx;
 }
 
 /* 顶部操作栏：搜索 + 添加 */

@@ -86,6 +86,7 @@ export default {
   color: #444548;
   text-align: center;
   margin-bottom: 8px;
+  margin-top: 150rpx;
 }
 
 /* 顶部统计卡片组 */

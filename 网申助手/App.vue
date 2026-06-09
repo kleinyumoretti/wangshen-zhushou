@@ -1,15 +1,21 @@
 <script>
-	export default {
-		onLaunch: function() {
-			console.log('网申助手 App Launch')
-		},
-		onShow: function() {
-			console.log('App Show')
-		},
-		onHide: function() {
-			console.log('App Hide')
+import storage from './utils/storage'
+
+export default {
+	onLaunch: function() {
+		console.log('网申助手 App Launch')
+		
+		if (storage.isLoggedIn()) {
+			uni.reLaunch({ url: '/pages/index/index' })
 		}
+	},
+	onShow: function() {
+		console.log('App Show')
+	},
+	onHide: function() {
+		console.log('App Hide')
 	}
+}
 </script>
 
 <style lang="scss">

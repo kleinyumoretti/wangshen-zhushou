@@ -1,0 +1,8 @@
+{
+  "name": "focusLogin",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {},
+    "uni-cloud-verify": {}
+  }
+}

@@ -7,16 +7,16 @@
       <!-- 顶部：三个统计标签 -->
       <view class="stats-row">
         <view class="stat-item">
-          <text class="stat-number">24</text>
+          <text class="stat-number">{{ totalCount }}</text>
           <text class="stat-text">总投递</text>
         </view>
         <view class="stat-item">
-          <text class="stat-number">6</text>
-          <text class="stat-text">待笔试</text>
+          <text class="stat-number">{{ inProgressCount }}</text>
+          <text class="stat-text">流程中</text>
         </view>
         <view class="stat-item">
-          <text class="stat-number">4</text>
-          <text class="stat-text">待面试</text>
+          <text class="stat-number">{{ rejectedCount }}</text>
+          <text class="stat-text">已拒绝</text>
         </view>
       </view>
 
@@ -40,11 +40,43 @@
 </template>
 
 <script>
+import storage from '@/utils/storage.js'
+
 export default {
   data() {
-    return {}
+    return {
+      totalCount: 0,
+      inProgressCount: 0,
+      rejectedCount: 0
+    }
+  },
+  onShow() {
+    this.loadStats()
   },
   methods: {
+    async loadStats() {
+      const userId = storage.getPhone()
+      
+      if (!userId) {
+        return
+      }
+      
+      try {
+        const db = uniCloud.database()
+        const res = await db.collection('job_applications')
+          .where({ user_id: userId })
+          .get()
+        
+        if (res.result && res.result.data) {
+          const data = res.result.data
+          this.totalCount = data.length
+          this.rejectedCount = data.filter(item => item.status === '已拒绝').length
+          this.inProgressCount = data.filter(item => item.status !== '已拒绝').length
+        }
+      } catch (error) {
+        console.error('获取统计数据失败:', error)
+      }
+    },
     goToRecords() {
       uni.reLaunch({ url: '/pages/records/records' })
     },

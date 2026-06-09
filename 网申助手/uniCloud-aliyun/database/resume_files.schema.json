@@ -1,0 +1,61 @@
+{
+  "bsonType": "object",
+  "required": ["phone_number", "resume_name", "file_url"],
+  "permission": {
+    "read": true,
+    "create": true,
+    "update": true,
+    "delete": true
+  },
+  "properties": {
+    "_id": {
+      "bsonType": "string",
+      "description": "存储文档 ID，系统自动生成"
+    },
+    "phone_number": {
+      "bsonType": "string",
+      "description": "用户手机号",
+      "label": "手机号",
+      "trim": "both"
+    },
+    "resume_name": {
+      "bsonType": "string",
+      "description": "简历版本名称",
+      "label": "简历版本",
+      "trim": "both"
+    },
+    "file_url": {
+      "bsonType": "string",
+      "description": "PDF文件临时访问URL",
+      "label": "文件地址",
+      "trim": "both"
+    },
+    "file_id": {
+      "bsonType": "string",
+      "description": "云存储文件ID，用于删除",
+      "label": "文件ID"
+    },
+    "file_size": {
+      "bsonType": "int",
+      "description": "文件大小（字节）",
+      "label": "文件大小",
+      "minimum": 0
+    },
+    "file_name": {
+      "bsonType": "string",
+      "description": "原始文件名",
+      "label": "原始文件名",
+      "trim": "both"
+    },
+    "create_time": {
+      "bsonType": "timestamp",
+      "description": "创建时间",
+      "label": "创建时间"
+    },
+    "update_time": {
+      "bsonType": "timestamp",
+      "description": "更新时间",
+      "label": "更新时间"
+    }
+  }
+}

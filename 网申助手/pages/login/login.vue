@@ -32,88 +32,93 @@
 </template>
 
 <script>
+import storage from '@/utils/storage'
+
 export default {
   data() {
     return {}
   },
   methods: {
     handleLogin() {
-      // 调起一键登录授权页面
-                  uni.login({
-                      provider: 'univerify',
-                      univerifyStyle: {
-                          // 可选：自定义界面样式
-                          fullScreen: false,
-                          backgroundColor: "#FFFFFF",
-                          authButton: {
-                              title: "本机号码一键登录"
-                          }
-                      },
-                      success: (res) => {
-                          console.log('授权成功', res.authResult);
-                          
-                          // 调用云函数换取手机号
-                          uniCloud.callFunction({
-                              name: 'focusLogin',  // 必须与云函数名称一致
-                              data: {
-                                  access_token: res.authResult.access_token,
-                                  openid: res.authResult.openid
-                              },
-                              success: (callRes) => {
-                                  console.log('云函数返回', callRes.result);
-                                  
-                                  if (callRes.result.code === 0) {
-                                      // 获取到手机号，登录成功
-                                      const phone = callRes.result.phoneNumber;
-                                      console.log('手机号：', phone);
-                                      
-                                      // 关闭授权页面
-                                      uni.closeAuthView();
-                                      
-                                      // 提示成功并跳转
-                                      uni.showToast({
-                                          title: '登录成功',
-                                          icon: 'success'
-                                      });
-                                      
-                                      // 跳转到首页（根据你的实际路径修改）
-                                      setTimeout(() => {
-                                          uni.reLaunch({ url: '/pages/index/index' })
-                                      }, 300);
-                                  } else {
-                                      uni.showToast({
-                                          title: callRes.result.message,
-                                          icon: 'none'
-                                      });
-                                      uni.closeAuthView();
-                                  }
-                              },
-                              fail: (err) => {
-                                  console.error('云函数调用失败', err);
-                                  uni.showToast({
-                                      title: '网络异常，请重试',
-                                      icon: 'none'
-                                  });
-                                  uni.closeAuthView();
-                              }
-                          });
-                      },
-                      fail: (err) => {
-                          console.log('授权失败', err.errCode, err.errMsg);
-                          uni.closeAuthView();
-                          
-                          if (err.errCode === 30002) {
-                              // 用户点击了"其他登录方式"
-                              uni.showToast({
-                                  title: '请使用其他方式登录',
-                                  icon: 'none'
-                              });
-                          }
-                      }
-                  });
+      uni.login({
+        provider: 'univerify',
+        univerifyStyle: {
+          fullScreen: false,
+          backgroundColor: "#FFFFFF",
+          authButton: {
+            title: "本机号码一键登录"
+          }
+        },
+        success: (res) => {
+          console.log('授权成功', res.authResult);
+          
+          uniCloud.callFunction({
+            name: 'focusLogin',
+            data: {
+              access_token: res.authResult.access_token,
+              openid: res.authResult.openid
+            },
+            success: (callRes) => {
+              console.log('云函数返回', callRes.result);
+              
+              if (callRes.result.code === 0) {
+                const phone = callRes.result.phoneNumber;
+                console.log('手机号：', phone);
+                
+                storage.setPhone(phone)
+                storage.setUserId(phone)
+                storage.setLoginStatus(true)
+                
+                uni.closeAuthView();
+                
+                uni.showToast({
+                  title: '登录成功',
+                  icon: 'success'
+                });
+                
+                setTimeout(() => {
+                  uni.reLaunch({ url: '/pages/index/index' })
+                }, 300);
+              } else {
+                uni.showToast({
+                  title: callRes.result.message,
+                  icon: 'none'
+                });
+                uni.closeAuthView();
+              }
+            },
+            fail: (err) => {
+              console.error('云函数调用失败', err);
+              uni.showToast({
+                title: '网络异常，请重试',
+                icon: 'none'
+              });
+              uni.closeAuthView();
+            }
+          });
+        },
+        fail: (err) => {
+          console.log('授权失败', err.errCode, err.errMsg);
+          uni.closeAuthView();
+          
+          if (err.errCode === 30002) {
+            uni.showToast({
+              title: '请使用其他方式登录',
+              icon: 'none'
+            });
+          }
+        }
+      });
     },
     handleOtherLogin() {
-      uni.reLaunch({ url: '/pages/index/index' })
+		storage.setPhone('11111111111')
+		storage.setUserId('11111111111')
+		storage.setLoginStatus(true)
+		uni.showToast({
+		  title: '登录成功',
+		  icon: 'success'
+		});
+		uni.reLaunch({ url: '/pages/index/index' })
 	  }
   }
 }
